@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <!-- SCRIPTS -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+        <script src="js/codepen.js"></script>
+        <script src="js/shelter.js"></script>
+        <script src="js/getShelters.js"></script>
+        <script src="js/writeTweet.js"></script>
+        <script src="js/redraw.js"></script>
+        <script src="js/timer.js"></script>
+        <!-- STYLES -->
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+        <link rel="stylesheet" href="css/codepen.css" />
+        <link rel="stylesheet" href="css/uibuttons.css" />
+        <style>
+            body {
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='sidebar'>
+            <div class='heading'>
+                <h1 id='shelterHeader'></h1>
+            </div>
+            <div class='bedcounter'>
+                Available Beds:
+                <a href="#" class="btn red" id="decrement">-</a>
+                <span class="btn blue" id="numBeds">x</span>
+                <a href="#" class="btn green" id="increment">+</a>
+            </div>
+            <div class='heading'>
+                <h1>Nearby Shelters</h1>
+            </div>
+            <div id='listings' class='listings'></div>
+        </div>
+        <div id='mapwrapper'>
+            <div id='map' class='map'> </div>
+        </div>
+    </body>
+</html>
